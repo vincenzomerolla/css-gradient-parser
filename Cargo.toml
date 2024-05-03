@@ -1,0 +1,22 @@
+[package]
+name = "css-gradient-parser"
+version = "1.0.0"
+description = "A simple CSS gradient parser"
+authors = ["Vincenzo Merolla"]
+license = "MIT"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+neon = "1"
+lightningcss = { version = "1.0.0-alpha.55", features = [
+    "serde",
+    "jsonschema",
+] }
+serde = { version = "1.0.123", features = ["derive"] }
+serde_json = "1.0.78"

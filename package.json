@@ -1,0 +1,32 @@
+{
+  "name": "@vinc3nzo/css-gradient-parser",
+  "version": "0.1.0",
+  "description": "A simple CSS gradient parser",
+  "main": "index.node",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install": "npm run build-release",
+    "test": "cargo test"
+  },
+  "author": "Vincenzo Merolla",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  },
+  "files": [
+    "index.node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenzomerolla/css-gradient-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vincenzomerolla/css-gradient-parser/issues"
+  },
+  "homepage": "https://github.com/vincenzomerolla/css-gradient-parser#readme"
+}
