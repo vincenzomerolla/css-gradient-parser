@@ -1,3 +1,3 @@
-# `@vincenzo/css-gradient-parser-darwin-universal`
+# `@vinc3nzo/css-gradient-parser-darwin-universal`
 
-This is the **universal-apple-darwin** binary for `@vincenzo/css-gradient-parser`
+This is the **universal-apple-darwin** binary for `@vinc3nzo/css-gradient-parser`
