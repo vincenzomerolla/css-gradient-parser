@@ -1,22 +1,22 @@
+
 [package]
 edition = "2021"
-name = "vincenzo_css-gradient-parser"
-version = "0.0.0"
+name    = "css_gradient_parser"
+version = "0.1.0"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-lightningcss = { version = "1.0.0-alpha.57", features = ["serde"] }
-# Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
-napi = { version = "2.12.2", default-features = false, features = ["napi4"] }
-napi-derive = "2.12.2"
-serde = { version = "1.0.203", features = ["derive"] }
-serde_json = "1.0.117"
+lightningcss = { version = "1.0.0-alpha.71", features = ["serde"] }
+napi         = { version = "3.0.0", default-features = false, features = ["napi8"] }
+napi-derive  = "3.0.0"
+serde        = { version = "1.0.228", features = ["derive"] }
+serde_json   = "1.0.149"
 
 [build-dependencies]
-napi-build = "2.0.1"
+napi-build = "2"
 
 [profile.release]
-lto = true
+lto   = true
 strip = "symbols"

@@ -1,0 +1,6 @@
+[tools]
+node               = "24"
+"npm:@napi-rs/cli" = "latest"
+pnpm               = "10.32"
+rust               = "latest"
+yarn               = "4.12"
